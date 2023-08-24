@@ -35,7 +35,7 @@ type ChatRequest struct {
 	//
 	// If a specific function should be invoked, use the format:
 	// `{"name": "my_function"}`
-	FunctionCallBehavior FunctionCallBehavior `json:"function_call,omitempty"`
+	FunctionCallBehavior any `json:"function_call,omitempty"`
 
 	// StreamingFunc is a function to be called for each chunk of a streaming response.
 	// Return an error to stop streaming early.
